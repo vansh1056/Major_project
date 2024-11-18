@@ -18,7 +18,7 @@ body{
     width: 100%;     /* Stretch across the width of the screen */
     display: flex;   /* Use flexbox for alignment */
     justify-content: space-evenly; /* Distribute links evenly */
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
     padding: 10px 0; /* Add spacing around the links */
     margin: 0;
     list-style: none;
@@ -38,19 +38,19 @@ body{
   }
   
   ul li a:hover {
-    color: #00ff99; /* Add a hover effect for text */
+    color: #ec0c0c; /* Add a hover effect for text */
   }
   
   ul li i {
-    font-size: 24px; /* Icon size */
+    font-size: 20px; /* Icon size */
     margin-bottom: 5px; /* Space between icon and text */
     transition: transform 0.3s ease; /* Smooth hover animation */
   }
   
   ul li:hover i {
-    transform: scale(1.2); /* Enlarge icon on hover */
-    color: #00ff99; /* Add hover effect for icon */
-  }
+    transform: scale(1.1); /* Enlarge icon on hover */
+    color: #ec0c0c; /* Add hover effect for icon */
+    }
   
   .main{
     max-width: 1500px;

@@ -5,7 +5,7 @@
 }
 
 header{
-	background-image: url('https://c4.wallpaperflare.com/wallpaper/863/294/339/nature-field-plain-land-wallpaper-preview.jpg'); 
+	background: url(image/background_home.jpg);
 	height: 100vh;
 	background-size: cover;
 	background-position: center;
@@ -17,7 +17,7 @@ ul {
 	width: 100%;     /* Stretch across the width of the screen */
 	display: flex;   /* Use flexbox for alignment */
 	justify-content: space-evenly; /* Distribute links evenly */
-	background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
 	padding: 10px 0; /* Add spacing around the links */
 	margin: 0;
 	list-style: none;
@@ -32,23 +32,23 @@ ul {
   ul li a {
 	text-decoration: none;
 	color: #fff;
-	font-size: 14px; /* Adjust text size */
+	font-size: 19px; /* Adjust text size */
 	transition: 0.3s ease-in-out;
   }
   
   ul li a:hover {
-	color: #00ff99; /* Add a hover effect for text */
+	color: #ec0c0c; /* Add a hover effect for text */
   }
   
   ul li i {
-	font-size: 24px; /* Icon size */
-	margin-bottom: 5px; /* Space between icon and text */
+	font-size: 20px; /* Icon size */
+	margin-bottom: 3px; /* Space between icon and text */
 	transition: transform 0.3s ease; /* Smooth hover animation */
   }
   
   ul li:hover i {
-	transform: scale(1.2); /* Enlarge icon on hover */
-	color: #00ff99; /* Add hover effect for icon */
+	transform: scale(1.1); /* Enlarge icon on hover */
+	color: #ec0c0c; /* Add hover effect for icon */
   }
   
 .logo img{
@@ -60,31 +60,66 @@ ul {
 	max-width: 1500px;
 	margin: auto;
 }
-.title{
+.title {
 	position: absolute;
-	top:50%;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%,-50%);
-}
-.title h1{
-	color: #1b0a0a;
-	font-size: 70px;
-}
-
-.button{
+	transform: translate(-50%, -50%);
+	text-align: center; /* Centers the title */
+  }
+  
+  .title h1 {
+	color: #808080; /* Gradient effect applied below */
+	font-size: 80px;
+	font-family: 'Poppins', sans-serif; /* Smooth and modern font */
+	font-weight: 700;
+	background: linear-gradient(300deg, #7c7c7c, #5c1717); /* Gradient from left to right */
+	background-clip: text; /* Makes the gradient visible inside the text */
+	-webkit-background-clip: text; /* For Safari */
+	color: transparent; /* Makes the text color transparent for gradient effect */
+	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+	letter-spacing: 3px; /* Slightly spaced out letters for a more modern look */
+	animation: fadeIn 1.5s ease-out; /* Fade-in animation */
+  }
+  
+  @keyframes fadeIn {
+	from {
+	  opacity: 0;
+	}
+	to {
+	  opacity: 1;
+	}
+  }
+  
+  .button {
 	position: absolute;
-	top:60%;
+	top: 60%;
 	left: 50%;
-	transform: translate(-50%,-50%);
-}
-.btn{
-	border: 2px solid #fff;
-	padding: 10px 30px;
-	color:#fff;
+	transform: translate(-50%, -50%);
+	text-align: center; /* Ensures buttons are aligned */
+  }
+  
+  .btn {
+	border: 2px solid #ff00005d;
+	border-radius: 2rem;
+	padding: 15px 60px;
+	color: #fff;
+	background-color: #ff00005d;
 	text-decoration: none;
-	transition: 0.6s ease;
-}
-.btn:hover{
-		background-color: #fff;
-	color: #000;
-}
+	font-size: 18px;
+	font-weight: bold;
+	transition: 0.4s ease;
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  }
+  
+  .btn:hover {
+	background-color: #fff;
+	color: #ff00005d;
+	box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+	transform: translateY(-3px); /* Slight lift effect */
+  }
+  
+  .btn:active {
+	transform: translateY(1px); /* Gives a press effect when clicked */
+  }
+  
