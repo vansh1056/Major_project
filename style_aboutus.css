@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css?family=Exo+2|Yatra+One');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Exo 2', sans-serif;
+}
+
+body {
+  background-color: rgb(255, 247, 247);
+  background: url('https://wallpaperaccess.com/full/1659992.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  position: fixed; /* Fix the navigation at the bottom */
+  bottom: 0;       /* Align it to the bottom of the screen */
+  left: 0;
+  width: 100%;     /* Stretch across the width of the screen */
+  display: flex;   /* Use flexbox for alignment */
+  justify-content: space-evenly; /* Distribute links evenly */
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+  padding: 10px 0; /* Add spacing around the links */
+  margin: 0;
+  list-style: none;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Stack icons and text vertically */
+}
+
+ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px; /* Adjust text size */
+  transition: 0.3s ease-in-out;
+}
+
+ul li a:hover {
+  color: #00ff99; /* Add a hover effect for text */
+}
+
+ul li i {
+  font-size: 24px; /* Icon size */
+  margin-bottom: 5px; /* Space between icon and text */
+  transition: transform 0.3s ease; /* Smooth hover animation */
+}
+
+ul li:hover i {
+  transform: scale(1.2); /* Enlarge icon on hover */
+  color: #00ff99; /* Add hover effect for icon */
+}
+
+
+
+.main {
+  padding-bottom: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.wrapper {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.wrapper h1 {
+  font-family: 'Yatra One', cursive;
+  font-size: 32px; /* Reduced for smaller screens */
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.our_team {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Even spacing between cards */
+}
+
+.our_team .team_member {
+  width: 100%; /* Full width for mobile */
+  max-width: 300px; /* Limit the max width for larger devices */
+  margin: 10px auto; /* Center the cards */
+  background: #fff;
+  padding: 20px 10px;
+  border-radius: 3rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.our_team .team_member .member_img {
+  background: #000000;
+  width: 150px; /* Reduced size for mobile */
+  height: 150px;
+  margin: 0 auto;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+.our_team .team_member .member_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.our_team .team_member h3 {
+  text-transform: uppercase;
+  font-size: 16px; /* Slightly smaller for mobile */
+  margin: 15px 0 10px;
+}
+
+.our_team .team_member p {
+  margin-top: 10px;
+  font-size: 13px;
+  line-height: 18px;
+  color: #555;
+}
+
+.our_team .team_member .member_img .social_media {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background: rgba(0, 0, 0, 0.65);
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0);
+  transition: all 0.5s ease;
+}
+
+.our_team .team_member .member_img .social_media .item {
+  margin: 0 10px;
+}
+
+.our_team .team_member .member_img .social_media .fab {
+  color: #8c7ae6;
+  font-size: 20px;
+}
+
+.our_team .team_member .member_img:hover .social_media {
+  transform: scale(1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .wrapper h1 {
+    font-size: 28px;
+  }
+
+  .our_team .team_member {
+    max-width: 90%; /* Reduce the max width on tablets */
+    margin: 10px auto;
+  }
+
+  .our_team .team_member .member_img {
+    width: 140px;
+    height: 140px;
+  }
+
+  .our_team .team_member p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper h1 {
+    font-size: 24px;
+  }
+
+  .our_team .team_member {
+    max-width: 100%; /* Full width for smaller devices */
+    padding: 15px 8px;
+  }
+
+  .our_team .team_member .member_img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .our_team .team_member h3 {
+    font-size: 14px;
+  }
+
+  .our_team .team_member p {
+    font-size: 11px;
+    line-height: 15px;
+  }
+}

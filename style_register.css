@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+	padding: 0;
+	font-family: Century Gothic;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(https://imgs.search.brave.com/uc2Ejnr7NncZDqP0m07UXDL5VL_ERX8j5o--zWjwkh4/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/cGl4YWJheS5jb20v/cGhvdG8vMjAxNy8x/MC8yOS8xNS81OC90/cmVlcy0yOTAwMDY0/XzY0MC5qcGc);
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    background-size: cover;
+	background-position: center;
+}
+
+ul {
+    position: fixed; /* Fix the navigation at the bottom */
+    bottom: 0;       /* Align it to the bottom of the screen */
+    left: 0;
+    width: 100%;     /* Stretch across the width of the screen */
+    display: flex;   /* Use flexbox for alignment */
+    justify-content: space-evenly; /* Distribute links evenly */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    padding: 10px 0; /* Add spacing around the links */
+    margin: 0;
+    list-style: none;
+  }
+  
+  ul li {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Stack icons and text vertically */
+  }
+  
+  ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px; /* Adjust text size */
+    transition: 0.3s ease-in-out;
+  }
+  
+  ul li a:hover {
+    color: #00ff99; /* Add a hover effect for text */
+  }
+  
+  ul li i {
+    font-size: 24px; /* Icon size */
+    margin-bottom: 5px; /* Space between icon and text */
+    transition: transform 0.3s ease; /* Smooth hover animation */
+  }
+  
+  ul li:hover i {
+    transform: scale(1.2); /* Enlarge icon on hover */
+    color: #00ff99; /* Add hover effect for icon */
+  }
+  
+.main{
+	max-width: 1500px;
+	margin: auto;
+}
+.register{
+    width: 320px;
+    height: 470px;
+    background: #000;
+    color: #fff;
+    top: 65%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing:content-box;
+   padding: 70px 30px ; 
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.register p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.register input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.register input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.register input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #98FF98;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.register input[type="submit"]:hover
+{
+    cursor: pointer;
+    background:#ffc107;
+    color: #000;
+}
+.register a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.register a:hover
+{
+    color: #ffc107;
+}
