@@ -5,14 +5,6 @@
   font-family: 'Exo 2', sans-serif;
 }
 
-body {
-  background-color: rgb(255, 247, 247);
-  background: url('https://wallpaperaccess.com/full/1659992.jpg');
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  padding: 0;
-}
 ul {
   position: fixed; /* Fix the navigation at the bottom */
   bottom: 0;       /* Align it to the bottom of the screen */
@@ -62,6 +54,44 @@ ul li:hover i {
   margin: auto;
 }
 
+
+/* Style for the social media icons in the top-right corner */
+.social-icons {
+  position:absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 15px;
+  z-index: 1000; /* Ensure icons are always on top */
+}
+
+.social-icon {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s, transform 0.3s;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  background-color: #ec0c0c; /* Red color on hover */
+  transform: scale(1.1);
+}
+
+.social-icon i {
+  font-size: 20px;
+}
+
+body {
+  background-color: rgb(255, 247, 247);
+  background: url('image/aboutus/background.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+
 .wrapper {
   margin-top: 40px;
   text-align: center;
@@ -69,7 +99,7 @@ ul li:hover i {
 
 .wrapper h1 {
   font-family: 'Yatra One', cursive;
-  font-size: 50px; /* Reduced for smaller screens */
+  font-size: 50px; /* Adjusted for smaller screens */
   color: #fff;
   margin-bottom: 15px;
 }
@@ -83,7 +113,7 @@ ul li:hover i {
 
 .our_team .team_member {
   width: 100%; /* Full width for mobile */
-  max-width: 300px; /* Limit the max width for larger devices */
+  max-width: 450px; /* Limit the max width for larger devices */
   margin: 10px auto; /* Center the cards */
   background: #fff;
   padding: 20px 10px;
@@ -99,7 +129,6 @@ ul li:hover i {
   border-radius: 50%;
   padding: 5px;
   position: relative;
-  cursor: pointer;
 }
 
 .our_team .team_member .member_img img {
@@ -122,77 +151,49 @@ ul li:hover i {
   text-align:center;
 }
 
-.our_team .team_member .member_img .social_media {
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  background: rgba(0, 0, 0, 0.65);
-  width: 95%;
-  height: 95%;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: scale(0);
-  transition: all 0.5s ease;
-}
-
-.our_team .team_member .member_img .social_media .item {
-  margin: 0 10px;
-}
-
-.our_team .team_member .member_img .social_media .fab {
-  color: #8c7ae6;
-  font-size: 20px;
-}
-
-.our_team .team_member .member_img:hover .social_media {
-  transform: scale(1);
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
   .wrapper h1 {
-    font-size: 28px;
+      font-size: 28px;
   }
 
   .our_team .team_member {
-    max-width: 90%; /* Reduce the max width on tablets */
-    margin: 10px auto;
+      max-width: 90%; /* Reduce the max width on tablets */
+      margin: 10px auto;
   }
 
   .our_team .team_member .member_img {
-    width: 140px;
-    height: 140px;
+      width: 140px;
+      height: 140px;
   }
 
   .our_team .team_member p {
-    font-size: 12px;
-    line-height: 16px;
+      font-size: 12px;
+      line-height: 16px;
   }
 }
 
 @media (max-width: 480px) {
   .wrapper h1 {
-    font-size: 24px;
+      font-size: 24px;
   }
 
   .our_team .team_member {
-    max-width: 100%; /* Full width for smaller devices */
-    padding: 15px 8px;
+      max-width: 100%; /* Full width for smaller devices */
+      padding: 15px 8px;
   }
 
   .our_team .team_member .member_img {
-    width: 120px;
-    height: 120px;
+      width: 120px;
+      height: 120px;
   }
 
   .our_team .team_member h3 {
-    font-size: 14px;
+      font-size: 14px;
   }
 
   .our_team .team_member p {
-    font-size: 11px;
-    line-height: 15px;
+      font-size: 11px;
+      line-height: 15px;
   }
 }

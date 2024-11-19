@@ -15,28 +15,41 @@
       <li><a href="feedback.html"><i class="fas fa-comment-dots"></i><strong>Feedback</strong></a></li>
     </ul>
 		</div>
-  <div class="contact-form">
-    <h1>Feedback</h1>
-    <div class="txtb">
-      <label>Full Name :</label>
-      <input type="text" name="" value="" placeholder="Enter Your Name">
+    <div class="feedback-container">
+      <div class="feedback-card">
+        <h1>We Value Your Feedback</h1>
+        <div class="feedback-form">
+          <div class="feedback-step">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+          </div>
+    
+          <div class="feedback-step">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email">
+          </div>
+    
+          <div class="feedback-step">
+            <label for="rating">How would you rate us?</label>
+            <div class="star-rating">
+              <input type="radio" name="rating" value="1" id="star1"><label for="star1">&#9733;</label>
+              <input type="radio" name="rating" value="2" id="star2"><label for="star2">&#9733;</label>
+              <input type="radio" name="rating" value="3" id="star3"><label for="star3">&#9733;</label>
+              <input type="radio" name="rating" value="4" id="star4"><label for="star4">&#9733;</label>
+              <input type="radio" name="rating" value="5" id="star5"><label for="star5">&#9733;</label>
+            </div>
+          </div>
+    
+          <div class="feedback-step">
+            <label for="message">Your Feedback:</label>
+            <textarea id="message" name="message" placeholder="Write your feedback here..."></textarea>
+          </div>
+    
+          <button class="btn-submit">Submit Feedback</button>
+        </div>
+      </div>
     </div>
-
-    <div class="txtb">
-      <label>Email :</label>
-      <input type="email" name="" value="" placeholder="Enter Your Email">
-    </div>
-
-    <div class="txtb">
-      <label>Phone Number :</label>
-      <input type="text" name="" value="" placeholder="Enter Your Phone Number">
-    </div>
-
-    <div class="txtb">
-      <label>Message :</label>
-      <textarea></textarea>
-    </div>
-    <a class="btn">Send</a>
-  </div>
+    
+    
   </body>
 </html>
