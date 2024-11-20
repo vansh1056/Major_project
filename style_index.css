@@ -33,7 +33,7 @@ ul {
   ul li a {
 	text-decoration: none;
 	color: #fff;
-	font-size: 19px; /* Adjust text size */
+	font-size: 25px; /* Adjust text size */
 	transition: 0.3s ease-in-out;
   }
   
@@ -74,7 +74,7 @@ ul {
 	font-size: 80px;
 	font-family: 'Poppins', sans-serif; /* Smooth and modern font */
 	font-weight: 700;
-	background: linear-gradient(300deg, #ffffff, #ff0000); /* Gradient from right to left*/
+	background: linear-gradient(800deg, #ff0000, #000000); /* Gradient from right to left*/
 	background-clip: text; /* Makes the gradient visible inside the text */
 	-webkit-background-clip: text; /* For Safari */
 	color: transparent; /* Makes the text color transparent for gradient effect */
