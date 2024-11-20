@@ -74,7 +74,7 @@ ul {
 	font-size: 80px;
 	font-family: 'Poppins', sans-serif; /* Smooth and modern font */
 	font-weight: 700;
-	background: linear-gradient(800deg, #ff0000, #000000); /* Gradient from right to left*/
+	background: linear-gradient(800deg, #ff0000, #ffc17a); /* Gradient from right to left*/
 	background-clip: text; /* Makes the gradient visible inside the text */
 	-webkit-background-clip: text; /* For Safari */
 	color: transparent; /* Makes the text color transparent for gradient effect */
@@ -82,7 +82,19 @@ ul {
 	letter-spacing: 3px; /* Slightly spaced out letters for a more modern look */
 	animation: fadeIn 1.5s ease-out; /* Fade-in animation */
   }
-  
+  p{
+	color: #808080; /* Gradient effect applied below */
+	font-size: 30px;
+	font-family: 'Poppins', sans-serif; /* Smooth and modern font */
+	font-weight: 700;
+	background: #000000;
+	background-clip: text; /* Makes the gradient visible inside the text */
+	-webkit-background-clip: text; /* For Safari */
+	color: transparent; /* Makes the text color transparent for gradient effect */
+	text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+	letter-spacing: 3px; /* Slightly spaced out letters for a more modern look */
+	animation: fadeIn 1.5s ease-out; /* Fade-in animation */
+  }
   @keyframes fadeIn {
 	from {
 	  opacity: 0;
@@ -94,7 +106,7 @@ ul {
   
   .button {
 	position: absolute;
-	top: 60%;
+	top: 62%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center; /* Ensures buttons are aligned */
@@ -107,7 +119,7 @@ ul {
 	color: #fff;
 	background-color: #ff00005d;
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 25px;
 	font-weight: bold;
 	transition: 0.4s ease;
 	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */

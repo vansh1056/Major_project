@@ -60,7 +60,7 @@ ul {
 }
 .register{
     width: 520px;
-    height: 510px;
+    height: 560px;
     background: #000;
     color: #fff;
     top: 50%;
@@ -69,6 +69,7 @@ ul {
     transform: translate(-50%,-50%);
     box-sizing:content-box;
    padding: 70px 30px ; 
+   border-radius: 3rem;
 }
 
 .avatar{
@@ -84,18 +85,20 @@ h1{
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
-    font-size: 22px;
+    font-size: 28px;
 }
 
 .register p{
     margin: 0;
     padding: 0;
     font-weight: bold;
+    font-size: x-large;
 }
 
 .register input{
     width: 100%;
     margin-bottom: 20px;
+    font-size: larger;
 }
 
 .register input[type="text"], input[type="password"]
@@ -106,16 +109,16 @@ h1{
     outline: none;
     height: 40px;
     color: #fff;
-    font-size: 16px;
+    font-size: 28px;
 }
 .register input[type="submit"]
 {
     border: none;
     outline: none;
     height: 40px;
-    background: #98FF98;
+    background: #ff0800;
     color: #fff;
-    font-size: 18px;
+    font-size: 25px;
     border-radius: 20px;
 }
 .register input[type="submit"]:hover
@@ -126,9 +129,11 @@ h1{
 }
 .register a{
     text-decoration: none;
-    font-size: 12px;
-    line-height: 20px;
+    font-size: 25px;
+    line-height: 25px;
     color: darkgrey;
+    display: flex;
+    margin: 9px;
 }
 
 .register a:hover

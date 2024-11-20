@@ -69,11 +69,12 @@ ul li:hover i {
   font-family: 'Montserrat', sans-serif;
   text-align: center;
   backdrop-filter: blur(10px); /* Subtle blur effect for background */
+  border-radius: 3rem;
 }
 
 .contact-form h1 {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 28px;
   color: #333;
   font-weight: 600;
 }
@@ -91,12 +92,12 @@ ul li:hover i {
   border-color: #149414;
 }
 
-.txtb label {
+.txtb p {
   display: block;
   text-align: left;
   color: #333;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 24px;
   margin-bottom: 5px;
 }
 
@@ -106,7 +107,7 @@ ul li:hover i {
   border: none;
   background: none;
   outline: none;
-  font-size: 16px;
+  font-size: 20px;
   padding: 10px;
 }
 
@@ -123,20 +124,20 @@ ul li:hover i {
 
 .btn {
   display: inline-block;
-  background: #149414;
+  background: #ff0000;
   padding: 16px 0;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
   margin-top: 15px;
   width: 100%;
-  font-size: 18px;
-  border-radius: 8px;
+  font-size: 25px;
+  border-radius: 2rem;
   transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background: #128c12;
+  background: #000000ab;
 }
 
 @media (max-width: 768px) {
