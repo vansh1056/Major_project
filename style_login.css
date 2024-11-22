@@ -14,7 +14,7 @@ ul {
     width: 100%;     /* Stretch across the width of the screen */
     display: flex;   /* Use flexbox for alignment */
     justify-content: space-evenly; /* Distribute links evenly */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background-color: rgba(0, 0, 0, 1); /* Semi-transparent background */
     padding: 10px 0; /* Add spacing around the links */
     margin: 0;
     list-style: none;
@@ -38,7 +38,7 @@ ul {
   }
   
   ul li i {
-    font-size: 20px; /* Icon size */
+    font-size: 65px; /* Icon size */
     margin-bottom: 5px; /* Space between icon and text */
     transition: transform 0.3s ease; /* Smooth hover animation */
   }
@@ -54,7 +54,7 @@ ul {
 }
 .loginbox{
     width: 520px;
-    height: 435px;
+    height: 480px;
     background: #000;
     color: #fff;
     top: 50%;
@@ -73,20 +73,21 @@ ul {
     position: absolute;
     top: -50px;
     left: calc(50% - 50px);
+    border: #000 solid;
 }
 
 h1{
     margin: 0;
     padding: 0 0 20px;
     text-align: center;
-    font-size: 28px;
+    font-size: 35px;
 }
 
 .loginbox p{
     margin: 0;
     padding: 0;
     font-weight: bold;
-    font-size: larger;
+    font-size: xx-large;
 }
 
 .loginbox input{
@@ -102,7 +103,7 @@ h1{
     outline: none;
     height: 40px;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
 }
 .loginbox input[type="submit"]
 {
@@ -123,7 +124,7 @@ h1{
 .loginbox a{
     display: flex;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 25px;
     line-height: 20px;
     color: darkgrey;
 }

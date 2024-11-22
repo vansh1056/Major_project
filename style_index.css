@@ -18,7 +18,7 @@ ul {
 	width: 100%;     /* Stretch across the width of the screen */
 	display: flex;   /* Use flexbox for alignment */
 	justify-content: space-evenly; /* Distribute links evenly */
-	background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+	background-color: rgba(0, 0, 0, 1); /* Semi-transparent background */
 	padding: 10px 0; /* Add spacing around the links */
 	margin: 0;
 	list-style: none;
@@ -33,7 +33,7 @@ ul {
   ul li a {
 	text-decoration: none;
 	color: #fff;
-	font-size: 25px; /* Adjust text size */
+	font-size: 28px; /* Adjust text size */
 	transition: 0.3s ease-in-out;
   }
   
@@ -42,7 +42,7 @@ ul {
   }
   
   ul li i {
-	font-size: 20px; /* Icon size */
+	font-size: 65px; /* Icon size */
 	margin-bottom: 3px; /* Space between icon and text */
 	transition: transform 0.3s ease; /* Smooth hover animation */
   }
@@ -71,7 +71,7 @@ ul {
   
   .title h1 {
 	color: #808080; /* Gradient effect applied below */
-	font-size: 80px;
+	font-size: 120px;
 	font-family: 'Poppins', sans-serif; /* Smooth and modern font */
 	font-weight: 700;
 	background: linear-gradient(800deg, #ff0000, #ffc17a); /* Gradient from right to left*/
@@ -84,7 +84,7 @@ ul {
   }
   p{
 	color: #808080; /* Gradient effect applied below */
-	font-size: 30px;
+	font-size: 35px;
 	font-family: 'Poppins', sans-serif; /* Smooth and modern font */
 	font-weight: 700;
 	background: #000000;
@@ -106,23 +106,23 @@ ul {
   
   .button {
 	position: absolute;
-	top: 62%;
+	top: 88%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	text-align: center; /* Ensures buttons are aligned */
   }
   
   .btn {
-	border: 2px solid #ff00005d;
+	border: 2px solid #ff0000;
 	border-radius: 2rem;
 	padding: 15px 60px;
 	color: #fff;
-	background-color: #ff00005d;
+	background-color: #ff00008a;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: bold;
 	transition: 0.4s ease;
-	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+	box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.9); /* Adds a subtle shadow */
   }
   
   .btn:hover {

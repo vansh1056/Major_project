@@ -5,7 +5,7 @@ ul {
   width: 100%;     /* Stretch across the width of the screen */
   display: flex;   /* Use flexbox for alignment */
   justify-content: space-evenly; /* Distribute links evenly */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 1); /* Semi-transparent background */
   padding: 10px 0; /* Add spacing around the links */
   margin: 0;
   list-style: none;
@@ -29,7 +29,7 @@ ul li a:hover {
 }
 
 ul li i {
-  font-size: 20px; /* Icon size */
+  font-size: 65px;/* Icon size */
   margin-bottom: 5px; /* Space between icon and text */
   transition: transform 0.3s ease; /* Smooth hover animation */
 }

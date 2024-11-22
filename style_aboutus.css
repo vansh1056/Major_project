@@ -12,10 +12,11 @@ ul {
   width: 100%;     /* Stretch across the width of the screen */
   display: flex;   /* Use flexbox for alignment */
   justify-content: space-evenly; /* Distribute links evenly */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  background-color: rgba(0, 0, 0, 1); /* Solid background */
   padding: 10px 0; /* Add spacing around the links */
   margin: 0;
   list-style: none;
+  z-index: 1000; /* Ensure it’s on top of background elements */
 }
 
 ul li {
@@ -36,33 +37,51 @@ ul li a:hover {
 }
 
 ul li i {
-  font-size: 20px; /* Icon size */
+  font-size: 65px; /* Icon size */
   margin-bottom: 5px; /* Space between icon and text */
   transition: transform 0.3s ease; /* Smooth hover animation */
 }
 
 ul li:hover i {
-	transform: scale(1.1); /* Enlarge icon on hover */
-	color: #ec0c0c; /* Add hover effect for icon */
-  }
+  transform: scale(1.1); /* Enlarge icon on hover */
+  color: #ec0c0c; /* Add hover effect for icon */
+}
 
+body {
+  background-color: rgb(255, 247, 247);
+  background: url('image/aboutus/background.jpg');
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
 
+.wrapper {
+  margin-top: 40px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.wrapper h1 {
+  font-family: 'Yatra One', cursive;
+  font-size: 50px; /* Adjusted for smaller screens */
+  color: #fff;
+  margin-bottom: 15px;
+}
 
 .main {
-  padding-bottom: 20px;
+  padding-bottom: 160px; /* Prevent overlap with fixed navigation */
   max-width: 1200px;
   margin: auto;
 }
 
-
-/* Style for the social media icons in the top-right corner */
 .social-icons {
-  position:absolute;
-  top: 10px;
-  right: 10px;
+  position: fixed; /* Fixed in the top-right corner */
+  top: 20px; /* Spacing from top */
+  right: 20px; /* Spacing from right */
   display: flex;
   gap: 15px;
-  z-index: 1000; /* Ensure icons are always on top */
+  z-index: 1100; /* Ensure icons are above most content */
 }
 
 .social-icon {
@@ -80,28 +99,7 @@ ul li:hover i {
 }
 
 .social-icon i {
-  font-size: 20px;
-}
-
-body {
-  background-color: rgb(255, 247, 247);
-  background: url('image/aboutus/background.jpg');
-  background-size: cover;
-  background-position: center;
-  margin: 0;
-  padding: 0;
-}
-
-.wrapper {
-  margin-top: 40px;
-  text-align: center;
-}
-
-.wrapper h1 {
-  font-family: 'Yatra One', cursive;
-  font-size: 50px; /* Adjusted for smaller screens */
-  color: #fff;
-  margin-bottom: 15px;
+  font-size: 35px;
 }
 
 .our_team {
@@ -109,6 +107,9 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   gap: 15px; /* Even spacing between cards */
+  position: relative; /* Avoid stacking issues */
+  z-index: 1; /* Above background but below icons and navigation */
+  margin-bottom: 100px; /* Space for fixed navigation bar */
 }
 
 .our_team .team_member {
@@ -116,7 +117,7 @@ body {
   max-width: 450px; /* Limit the max width for larger devices */
   margin: 10px auto; /* Center the cards */
   background: #fff;
-  padding: 20px 10px;
+  padding: 25px 15px; /* Adjust padding for readability */
   border-radius: 3rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -145,55 +146,55 @@ body {
 
 .our_team .team_member p {
   margin-top: 10px;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 30px;
   color: #555;
-  text-align:center;
+  text-align: center;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .wrapper h1 {
-      font-size: 28px;
+    font-size: 28px;
   }
 
   .our_team .team_member {
-      max-width: 90%; /* Reduce the max width on tablets */
-      margin: 10px auto;
+    max-width: 90%; /* Reduce the max width on tablets */
+    margin: 10px auto;
   }
 
   .our_team .team_member .member_img {
-      width: 140px;
-      height: 140px;
+    width: 140px;
+    height: 140px;
   }
 
   .our_team .team_member p {
-      font-size: 12px;
-      line-height: 16px;
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 
 @media (max-width: 480px) {
   .wrapper h1 {
-      font-size: 24px;
+    font-size: 24px;
   }
 
   .our_team .team_member {
-      max-width: 100%; /* Full width for smaller devices */
-      padding: 15px 8px;
+    max-width: 100%; /* Full width for smaller devices */
+    padding: 15px 8px;
   }
 
   .our_team .team_member .member_img {
-      width: 120px;
-      height: 120px;
+    width: 120px;
+    height: 120px;
   }
 
   .our_team .team_member h3 {
-      font-size: 14px;
+    font-size: 14px;
   }
 
   .our_team .team_member p {
-      font-size: 11px;
-      line-height: 15px;
+    font-size: 12px;
+    line-height: 15px;
   }
 }
